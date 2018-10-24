@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">AppCliente2</string>
+    <string name="nav_paradas">Paradas</string>
+    <string name="nav_boletos">Boletos</string>
+    <string name="nav_convenios">Convenios</string>
+    <string name="nav_menu">Menu</string>
+    <string name="nav_horarios">Horarios</string>
+    <string name="nav_rutas">Rutas</string>
+    <string name="num_uno">uno</string>
+    <string name="numero_uno">1</string>
+    <string name="numero_dos">2</string>
+    <string name="numero_tres">3</string>
+    <string name="numero_cuatro">4</string>
+</resources>

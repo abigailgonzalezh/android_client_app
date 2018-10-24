@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DosBoletos">
+
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="101dp"
+        android:layout_height="41dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="398dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:color/transparent"
+        android:text="siguiente"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/precioAdulto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/tituloAdulto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="264dp"
+        android:text="$65"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        app:itemTextColor="@android:color/darker_gray"
+        app:menu="@menu/menu_toolbar"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"></android.support.design.widget.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/uno"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="294dp"
+        android:layout_marginBottom="376dp"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/dos"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="37dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="377dp"
+        android:layout_toStartOf="@+id/tres"
+        android:background="@color/colorAccent"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tres"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="375dp"
+        android:layout_toStartOf="@+id/cuatro"
+        android:text="3"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuatro"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="54dp"
+        android:layout_marginBottom="376dp"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tituloAdulto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignStart="@+id/uno"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="134dp"
+        android:text="Adulto (13 - 59 años)"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tituloNino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="241dp"
+        android:layout_marginEnd="222dp"
+        android:layout_marginBottom="194dp"
+        android:text="Niños (4 - 12 años)"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tituloInapam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="340dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="95dp"
+        android:text="INAPAM (mayor de 60 años)"
+        android:textColor="@android:color/black"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/precioInapam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/tituloAdulto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="204dp"
+        android:layout_marginBottom="71dp"
+        android:text="$45"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/precioNino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/tituloAdulto"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="106dp"
+        android:layout_marginBottom="168dp"
+        android:text="$45"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/cantidadAdulto"
+        android:layout_width="42dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tituloAdulto"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="99dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="-11dp"
+        android:layout_toEndOf="@+id/tituloAdulto"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+
+    <EditText
+        android:id="@+id/cantidadNino"
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/tituloAdulto"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="94dp"
+        android:layout_marginEnd="61dp"
+        android:layout_marginBottom="-114dp"
+        android:layout_toEndOf="@+id/tituloAdulto"
+        android:ems="10"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/cantidadInapam"
+        android:layout_width="42dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/tituloAdulto"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="-214dp"
+        android:layout_toEndOf="@+id/tituloAdulto"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/botonMasAdulto"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="333dp"
+        android:layout_marginTop="137dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="298dp"
+        android:background="@drawable/add" />
+
+    <Button
+        android:id="@+id/botonMasNino"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="334dp"
+        android:layout_marginTop="244dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="191dp"
+        android:background="@drawable/add" />
+
+    <Button
+        android:id="@+id/botonMasInapam"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="334dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="94dp"
+        android:background="@drawable/add" />
+
+    <Button
+        android:id="@+id/botonMenosAdulto"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="297dp"
+        android:background="@drawable/menos" />
+
+    <Button
+        android:id="@+id/botonMenosNino"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="243dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="192dp"
+        android:background="@drawable/menos" />
+
+    <Button
+        android:id="@+id/botonMenosInapam"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="341dp"
+        android:layout_marginEnd="126dp"
+        android:layout_marginBottom="94dp"
+        android:background="@drawable/menos" />
+
+
+</RelativeLayout>

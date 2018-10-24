@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        app:itemTextColor="@android:color/darker_gray"
+        app:menu="@menu/menu_toolbar"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"></android.support.design.widget.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/uno"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="295dp"
+        android:layout_marginBottom="366dp"
+        android:background="@color/colorAccent"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/dos"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="366dp"
+        android:layout_toStartOf="@+id/tres"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tres"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="38dp"
+        android:layout_marginBottom="366dp"
+        android:layout_toStartOf="@+id/cuatro"
+        android:text="3"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/cuatro"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="41dp"
+        android:layout_marginBottom="366dp"
+        android:text="4"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/tituloRuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="248dp"
+        android:layout_marginBottom="297dp"
+        android:text="Elige tu ruta"
+        android:textSize="14sp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="41dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="41dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="256dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <EditText
+        android:id="@+id/fechaTour"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="45dp"
+        android:layout_marginBottom="169dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/horarioTour"
+        android:layout_width="wrap_content"
+        android:layout_height="41dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="334dp"
+        android:layout_marginEnd="43dp"
+        android:layout_marginBottom="80dp"
+        android:ems="10"
+        android:inputType="time"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tituloFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="219dp"
+        android:layout_marginEnd="149dp"
+        android:layout_marginBottom="266dp"
+        android:text="Elige la fecha del tour"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tituloHorario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="309dp"
+        android:layout_marginEnd="209dp"
+        android:layout_marginBottom="122dp"
+        android:text="Elige un horario"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tituloFecha"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="75dp"
+        android:background="@android:color/transparent"
+        android:text="siguiente"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+</RelativeLayout>

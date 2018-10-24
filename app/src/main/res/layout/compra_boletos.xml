@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BoletosCompra">
+
+    <CheckBox
+        android:id="@+id/americanCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="293dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="327dp" />
+
+    <ImageView
+        android:id="@+id/american"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="259dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="304dp"
+        app:srcCompat="@drawable/american" />
+
+    <TextView
+        android:id="@+id/uno"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="141dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="196dp"
+        android:layout_marginBottom="392dp"
+        android:background="@color/colorAccent"
+        android:text="1"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/dos"
+        android:layout_width="47dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="198dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginBottom="392dp"
+        android:text="2"
+        android:textAlignment="center"
+        android:textColor="@color/colorAccent"
+        android:textSize="30sp" />
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <android.support.design.widget.NavigationView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+        app:itemTextColor="@android:color/darker_gray"
+        app:menu="@menu/menu_toolbar"
+        android:layout_gravity="start">
+    </android.support.design.widget.NavigationView>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/nav_items"></android.support.design.widget.BottomNavigationView>
+
+    <TextView
+        android:id="@+id/tituloSeleccion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="161dp"
+        android:layout_marginBottom="354dp"
+        android:text="Selecciona tu tarjeta de crédito"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/visa"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="262dp"
+        android:layout_marginBottom="304dp"
+        app:srcCompat="@drawable/visa" />
+
+    <ImageView
+        android:id="@+id/mastercard"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="138dp"
+        android:layout_marginTop="101dp"
+        android:layout_marginEnd="146dp"
+        android:layout_marginBottom="304dp"
+        app:srcCompat="@drawable/mastercard" />
+
+    <CheckBox
+        android:id="@+id/visaCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="297dp"
+        android:layout_marginBottom="327dp" />
+
+    <CheckBox
+        android:id="@+id/masterCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="171dp"
+        android:layout_marginTop="151dp"
+        android:layout_marginEnd="181dp"
+        android:layout_marginBottom="328dp" />
+
+    <TextView
+        android:id="@+id/numTarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="245dp"
+        android:layout_marginBottom="307dp"
+        android:text="Número de tarjeta"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/fechaVencimiento"
+        android:layout_width="145dp"
+        android:layout_height="17dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="245dp"
+        android:layout_marginEnd="216dp"
+        android:layout_marginBottom="193dp"
+        android:text="Fecha de vencimiento"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/tarjeta"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="205dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="206dp"
+        android:ems="10"
+        android:inputType="number"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/mes"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignStart="@+id/tituloSeleccion"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="263dp"
+        android:layout_marginBottom="146dp"
+        android:ems="10"
+        android:hint="Mes"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/ano"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="212dp"
+        android:layout_marginTop="263dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="146dp"
+        android:ems="10"
+        android:hint="Año"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/codigoSeguridad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignStart="@+id/tituloSeleccion"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="309dp"
+        android:layout_marginBottom="184dp"
+        android:text="Código de seguridad"
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/numSeguridad"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="328dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="81dp"
+        android:ems="10"
+        android:inputType="numberPassword" />
+
+    <Button
+        android:id="@+id/botonSiguiente"
+        android:layout_width="102dp"
+        android:layout_height="43dp"
+        android:layout_above="@+id/navbar"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="139dp"
+        android:layout_marginTop="385dp"
+        android:layout_marginEnd="143dp"
+        android:layout_marginBottom="27dp"
+        android:background="@android:color/transparent"
+        android:text="Siguiente"
+        android:textColor="@color/colorAccent"
+        android:textSize="18sp" />
+
+</RelativeLayout>
